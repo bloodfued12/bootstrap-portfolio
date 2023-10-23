@@ -7,9 +7,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link ref="stylesheet" href="style.css">
+  <link href="style.css" ref="stylesheet">
 </head>
 <!-- visualised code -->
 
@@ -21,9 +21,10 @@
             src="../images/logo-no-background.png" alt="developerist" height="50px" width="70px"></a>
         <div class="container-fluid d-flex justify-content-end align-content-center">
           <ul class="nav">
-            <li class="nav-item"><a class="nav-link" href="">About</a<< /li>
-            <li class="nav-item"><a class="nav-link" href="">Work</a></li>
-            <li class="nav-item"><a class="nav-link" href="">contact</a></li>
+            <li class="nav-item"><a class="nav-link link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#work-title">Work</a></li>
+            <li class="nav-item"><a class="nav-link link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#skills">skills</a></li>
+            <li class="nav-item"><a class="nav-link link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#contact">contact</a></li>
           </ul>
         </div>
       </nav>
@@ -31,12 +32,15 @@
 
 
     </div>
+    <div class="container-fluid">
+      <img class="mt-0 mx-0" src="/images/02-hero-bg.jpg" alt="hero-brand" width="100%" height="200px">
+    </div>
   </header>
 
 
   <div class="container mt-5">
     <div class="w-vw-75 h-vh-50 row">
-      <h3 class="m-5">About</h3>
+      <h3 class="m-5" id="about">About</h3>
       <img class="img-fluid rounded-circle w-50 h-50 m-auto border border-dark border-5"
         src="../images/WIN_20230914_08_49_43_Pro.jpg" alt="portfolio-selfie">
       <p class="p-5 text-center">Hello, It's nice to have you stumble upon my portfolio website.<br>
@@ -48,53 +52,83 @@
         <img title="icon" src="../images/HTML5_Logo_32.png" alt="html-5" width="25px" height="25px">
         <img title="icon" src="../images/CSS3_logo_and_wordmark.svg.png" alt="css-3" width="25px" height="25px">
         <img title="icon" src="../images/JavaScript-logo.png" alt="Javascript-6" width="25px" height="25px">
+        <i class="bi bi-git fs-5"></i>
+        <i class="bi bi-github fs-5"></i>
+        <i class="bi bi-bootstrap fs-5"></i>
       </div>
-      <div class="col-sm-4">
+      <section class="row" >
+        <h3 id="skills">Skills</h3>
+        <p>The skills I would like to learn from the course are as follows:
+          Firstly, I would like to learn the soft skills that are required
+          in order to be an efficient web developer,
+          an example of this would be learning to communicate in an agile way.
+          Secondly, I would like to learn the applicable knowledge that would
+          otherwise only be known by someone within the same industry as
+          the one I am attempting to enter into,
+          as this would be excruciatingly hard to get into otherwise.
+          Finally, I would like to learn the industry languages of the web
+          without getting stuck, which this course has the right structure to
+          enable me to get this done.</p>
+      </section>
+      <div class="container-fluid">
         <h2 class="grid-item" id="work-title">Work</h2>
 
         <!--Images of work with titles here: When images of the applications are clicked then the user is taken to that deployed application -->
         <!-- lightboard element -->
         <div class="grid-item mainCard" id="lightboard">
-          <a href="">
-            <img id="mainCardImg" class="w-vh-50 h-vh-50" src="../images/02-portfolio-1.jpg" alt="led-lightboard">
+          <a href="https://bloodfued12.github.io/prework-study-guide-bootcamp/prework-study-guide/prework-study-guide/">
+            <img id="mainCardImg" class="w-vh-75 h-vh-75 card-img-top" src="../images/images/study-guide.png"
+              alt="study guide">
           </a>
-          <h4 class="card-title">led lightboard </h4>
+          <h4 class="card-title">study guide </h4>
+          <p class="card-text">The is the study guide which you can find the repository for <a class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+              href="https://github.com/bloodfued12/prework-study-guide-bootcamp">here!</a></p>
         </div>
-       <div class="d-flex">
-         <!-- Calculator element -->
-         <div class="card grid-item" id="Calculator">
-          <a href="">
-            <img class="w--vw-25 h-vh-75" src="../images/02-portfolio-2.jpg" alt="Calculator-sourcecode">
-          </a>
+        <div class="d-flex">
+          <!-- Portfolio project-->
+          <div class="card grid-item" id="">
+            <a href="https://bloodfued12.github.io/my-edx-portfolio/starter/index.html">
+              <img class="w-vw-25 h-vh-75 card-img-top" src="../images/images/portfolio-project.png"
+                alt="porfolio-project">
+            </a>
 
-          <h4 class="card-title">Calculator project</h4>
+            <h4 class="card-title">portfolio-project</h4>
+            <p class="card-text">This was an additional porfolio project that I have made alongside the edX course that
+              showcases my knowledge and skills with html and css! To see the project you can find it 
+              <a class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://github.com/bloodfued12/my-edx-portfolio">here!</a></p>
+          </div>
+          <!-- sunny surfers element -->
+          <div class="card grid-item" id="sunny-surfers">
+            <a href="">
+              <img class="w-vw-75 h-vh-75 card-img-top" src="../images/02-portfolio-4.jpg" alt="sunny-surfers">
+            </a>
+            <h4 class="card-title">Surf weather app</h4>
+            <p class="card-text"></p>
+          </div>
+          <!-- runner app element -->
+          <div class="card grid-item" id="runner-app">
+            <a href="">
+              <img class="w-vw-75 h-vh-75 card-img-top" src="../images/02-run-buddy.jpg" alt="runner-app">
+            </a>
+            <h4 class="card-title">Running app</h4>
+            <p class="card-text"></p>
+          </div>
 
         </div>
-        <!-- sunny surfers element -->
-        <div class="card grid-item" id="sunny-surfers">
-          <a href="">
-            <img class="w-100 h-100" src="../images/02-portfolio-4.jpg" alt="sunny-surfers">
-          </a>
-          <h4 class="card-title">Surf weather app</h4>
-        </div>
-        <!-- runner app element -->
-        <div class="card grid-item" id="runner-app">
-          <a href="">
-            <img class="w-100 h-100" src="../images/02-run-buddy.jpg" alt="runner-app">
-          </a>
-          <h4 class="card-title">Running app</h4>
-        </div>
-
-       </div>
 
       </div>
-    
+
     </div>
-  </div> 
-   <div class="">
-        <h3>Contact</h3>
-
-      </div>
+  </div>
+  <section id="footer">
+    <h3 id="contact">Contact</h3>
+    <ul class="nav justify-content-evenly">
+      <li><a class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Facebook</a></li>
+      <li><a class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Instagram</a></li>
+      <li><a class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Twitter</a></li>
+      <li><a class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Github</a></li>
+    </ul>
+  <section>
 
 </body>
 
