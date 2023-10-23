@@ -21,10 +21,18 @@
             src="../images/logo-no-background.png" alt="developerist" height="50px" width="70px"></a>
         <div class="container-fluid d-flex justify-content-end align-content-center">
           <ul class="nav">
-            <li class="nav-item"><a class="nav-link link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#work-title">Work</a></li>
-            <li class="nav-item"><a class="nav-link link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#skills">skills</a></li>
-            <li class="nav-item"><a class="nav-link link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#contact">contact</a></li>
+            <li class="nav-item"><a
+                class="nav-link link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#about">About</a></li>
+            <li class="nav-item"><a
+                class="nav-link link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#work-title">Work</a></li>
+            <li class="nav-item"><a
+                class="nav-link link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#skills">skills</a></li>
+            <li class="nav-item"><a
+                class="nav-link link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#contact">contact</a></li>
           </ul>
         </div>
       </nav>
@@ -38,8 +46,8 @@
   </header>
 
 
-  <div class="container mt-5">
-    <div class="w-vw-75 h-vh-50 row">
+  <div class="container mt-5  ">
+    <section class="w-vw-75 h-vh-50 row">
       <h3 class="m-5" id="about">About</h3>
       <img class="img-fluid rounded-circle w-50 h-50 m-auto border border-dark border-5"
         src="../images/WIN_20230914_08_49_43_Pro.jpg" alt="portfolio-selfie">
@@ -56,7 +64,7 @@
         <i class="bi bi-github fs-5"></i>
         <i class="bi bi-bootstrap fs-5"></i>
       </div>
-      <section class="row" >
+      <section class="row">
         <h3 id="skills">Skills</h3>
         <p>The skills I would like to learn from the course are as follows:
           Firstly, I would like to learn the soft skills that are required
@@ -71,64 +79,74 @@
           enable me to get this done.</p>
       </section>
       <div class="container-fluid">
-        <h2 class="grid-item" id="work-title">Work</h2>
+
+        <h2 class="grid-item col" id="work-title">Work</h2>
 
         <!--Images of work with titles here: When images of the applications are clicked then the user is taken to that deployed application -->
         <!-- lightboard element -->
-        <div class="grid-item mainCard" id="lightboard">
+        <div class="grid-item mainCard col" id="lightboard">
           <a href="https://bloodfued12.github.io/prework-study-guide-bootcamp/prework-study-guide/prework-study-guide/">
             <img id="mainCardImg" class="w-vh-75 h-vh-75 card-img-top" src="../images/images/study-guide.png"
               alt="study guide">
           </a>
           <h4 class="card-title">study guide </h4>
-          <p class="card-text">The is the study guide which you can find the repository for <a class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+          <p class="card-text">The is the study guide which you can find the repository for <a
+              class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
               href="https://github.com/bloodfued12/prework-study-guide-bootcamp">here!</a></p>
         </div>
-        <div class="d-flex">
-          <!-- Portfolio project-->
-          <div class="card grid-item" id="">
-            <a href="https://bloodfued12.github.io/my-edx-portfolio/starter/index.html">
-              <img class="w-vw-25 h-vh-75 card-img-top" src="../images/images/portfolio-project.png"
-                alt="porfolio-project">
-            </a>
+        <div class="row row-cols-sm-1 row cols-md-3">
+          <div class="d-md-flex">
+            <!-- Portfolio project-->
+            <div class="card grid-item" id="">
+              <a href="https://bloodfued12.github.io/my-edx-portfolio/starter/index.html">
+                <img class="w-vw-25 h-vh-75 card-img-top" src="../images/images/portfolio-project.png"
+                  alt="porfolio-project">
+              </a>
 
-            <h4 class="card-title">portfolio-project</h4>
-            <p class="card-text">This was an additional porfolio project that I have made alongside the edX course that
-              showcases my knowledge and skills with html and css! To see the project you can find it 
-              <a class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://github.com/bloodfued12/my-edx-portfolio">here!</a></p>
+              <h4 class="card-title">portfolio-project</h4>
+              <p class="card-text">This was an additional porfolio project that I have made alongside the edX course
+                that
+                showcases my knowledge and skills with html and css! To see the project you can find it
+                <a class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                  href="https://github.com/bloodfued12/my-edx-portfolio">here!</a>
+              </p>
+            </div>
+            <!-- sunny surfers element -->
+            <div class="card grid-item" id="sunny-surfers">
+              <a href="">
+                <img class="w-vw-75 h-vh-75 card-img-top" src="../images/02-portfolio-4.jpg" alt="sunny-surfers">
+              </a>
+              <h4 class="card-title">Surf weather app</h4>
+              <p class="card-text"></p>
+            </div>
+            <!-- runner app element -->
+            <div class="card grid-item" id="runner-app">
+              <a href="">
+                <img class="w-vw-75 h-vh-75 card-img-top" src="../images/02-run-buddy.jpg" alt="runner-app">
+              </a>
+              <h4 class="card-title">Running app</h4>
+              <p class="card-text"></p>
+            </div>
           </div>
-          <!-- sunny surfers element -->
-          <div class="card grid-item" id="sunny-surfers">
-            <a href="">
-              <img class="w-vw-75 h-vh-75 card-img-top" src="../images/02-portfolio-4.jpg" alt="sunny-surfers">
-            </a>
-            <h4 class="card-title">Surf weather app</h4>
-            <p class="card-text"></p>
-          </div>
-          <!-- runner app element -->
-          <div class="card grid-item" id="runner-app">
-            <a href="">
-              <img class="w-vw-75 h-vh-75 card-img-top" src="../images/02-run-buddy.jpg" alt="runner-app">
-            </a>
-            <h4 class="card-title">Running app</h4>
-            <p class="card-text"></p>
-          </div>
-
         </div>
 
       </div>
 
-    </div>
+    </section>
   </div>
-  <section id="footer">
+  <section class="container" id="footer">
     <h3 id="contact">Contact</h3>
     <ul class="nav justify-content-evenly">
-      <li><a class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Facebook</a></li>
-      <li><a class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Instagram</a></li>
-      <li><a class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Twitter</a></li>
-      <li><a class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Github</a></li>
+      <li><a class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+          href="">Facebook</a></li>
+      <li><a class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+          href="">Instagram</a></li>
+      <li><a class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+          href="">Twitter</a></li>
+      <li><a class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+          href="">Github</a></li>
     </ul>
-  <section>
+    <section>
 
 </body>
 
