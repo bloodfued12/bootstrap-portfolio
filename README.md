@@ -16,4 +16,4 @@ I also think that this project would help me to stand out when potential employe
 A link to the deployed project has been give below.
 [The website link](https://bloodfued12.github.io/bootstrap-portfolio/starter/index.html)
 
-
+![Screenshot of the finished portfolio](./images/images/Screenshot%202023-10-23%20111950.png)
